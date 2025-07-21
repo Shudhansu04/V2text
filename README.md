@@ -99,10 +99,5 @@ V2text/
 └── README.md
 ```
 
-## License
 
-<<<<<<< HEAD
-This project is licensed under the ISC License.
-=======
-This project is licensed under the ISC License.
->>>>>>> 79b5a93 (Enhance README with detailed project description, features, technologies, and setup instructions; update backend index.js for improved routing response; refactor SideBar component for better readability and functionality.)
+ 
