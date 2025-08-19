@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SignUp from "./SignUp.jsx";
 import Login from "./Login.jsx";
+import icon from "../assets/icon.jpg";
 
 const sidebarInfo = [
   { icon: ">", text: "Real-time messaging" },
@@ -158,7 +159,7 @@ const Landingpage = () => {
         </header>
         <div style={{position: "relative", marginBottom: "3rem"}}>
           <img
-            src="/assets/dpIcon.webp"
+             src={icon}
             alt="Chat friendly"
             style={{
               width: "35px",
