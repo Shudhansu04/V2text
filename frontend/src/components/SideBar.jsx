@@ -15,15 +15,17 @@ function SideBar() {
     let dispatch = useDispatch()
     let navigate = useNavigate()
     const handleLogOut = async () => {
-        try {
-            let result = await axios.get(`${serverUrl}/api/auth/logout`, { withCredentials: true })
-            dispatch(setUserData(null))
-            dispatch(setOtherUsers(null))
-            navigate("/login")
-        } catch (error) {
-            console.log(error)
-        }
+    try {
+        await axios.get(`${serverUrl}/api/auth/logout`, { withCredentials: true });
+        dispatch(setUserData(null));
+        dispatch(setOtherUsers(null));
+        dispatch(setSelectedUser(null));    
+        dispatch(setSearchData(null));    
+        navigate("/login");
+    } catch (error) {
+        console.log(error);
     }
+}
 
     const handlesearch = async () => {
         try {
