@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Landingpage from './pages/Landingpage';
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Login from './pages/Login.jsx'
 import SignUp from './pages/SignUp.jsx'
@@ -46,7 +47,7 @@ function App() {
     <Routes>
       <Route path='/login' element={!userData?<Login/>:<Navigate to="/"/>}/>
       <Route path='/signup' element={!userData?<SignUp/>:<Navigate to="/profile"/>}/>
-      <Route path='/' element={userData?<Home/>:<Navigate to="/login"/>}/>
+       <Route path="/" element={<Landingpage />} />
       <Route path='/profile' element={userData?<Profile/>:<Navigate to="/signup"/>}/>
     </Routes>
   )

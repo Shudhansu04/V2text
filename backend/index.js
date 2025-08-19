@@ -11,11 +11,11 @@ import { app, server } from "./socket/socket.js"
 
 const port=process.env.PORT||5000
 
-
 app.use(cors({
     origin:"https://v2text.onrender.com",
     credentials:true
 }))
+
 app.get("/", (req, res) => {
     res.send("V2text backend is running!");
 });
