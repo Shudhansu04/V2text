@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Landingpage from './pages/Landingpage';
+import Landingpage from './pages/Landingpage.jsx';
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Login from './pages/Login.jsx'
 import SignUp from './pages/SignUp.jsx'
