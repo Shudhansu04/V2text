@@ -45,10 +45,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/login' element={!userData?<Login/>:<Navigate to="/home"/>}/>
-      <Route path='/signup' element={!userData?<SignUp/>:<Navigate to="/signup"/>}/>
-       <Route path="/" element={<Landingpage />} />
-      <Route path='/home' element={userData?<Home/>:<Navigate to="/login"/>}/>
+      <Route path='/login' element={!userData?<Login/>:<Navigate to="/"/>}/>
+      <Route path='/signup' element={!userData?<SignUp/>:<Navigate to="/profile"/>}/>
+      <Route path='/' element={userData?<Home/>:<Navigate to="/login"/>}/>
       <Route path='/profile' element={userData?<Profile/>:<Navigate to="/signup"/>}/>
     </Routes>
   )
