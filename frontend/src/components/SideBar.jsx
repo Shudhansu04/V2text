@@ -50,7 +50,7 @@ function SideBar() {
             {input.length > 0 && <div className='flex absolute top-[250px] bg-[white] w-full h-[500px] overflow-y-auto items-center pt-[20px] flex-col gap-[10px] z-[150] shadow-lg'>
                 {searchData?.map((user) => (
                     <div className='w-[95%] h-[70px] flex items-center gap-[20px]  px-[10px] hover:bg-[#78cae5] border-b-2 border-gray-400 cursor-pointer' onClick={() => {
-                        dispatch(setSelectedUser(user))
+                        dispatch(setSelectedUser(user) )
                         setInput("")
                         setSearch(false)
                     }

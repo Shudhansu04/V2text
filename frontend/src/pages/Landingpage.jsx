@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SignUp from "./SignUp.jsx";
+import Login from "./Login.jsx";
 
 const sidebarInfo = [
   { icon: ">", text: "Real-time messaging" },
@@ -13,6 +15,7 @@ const whatsNew = [
   "File Sharing",
   "Emoji reactions",
 ];
+ 
 
 const Landingpage = () => {
   return (
