@@ -158,7 +158,7 @@ const Landingpage = () => {
         </header>
         <div style={{position: "relative", marginBottom: "3rem"}}>
           <img
-            src="..\src\assets\dpIcon.webp"
+            src="public\dpIcon.webp"
             alt="Chat friendly"
             style={{
               width: "35px",
