@@ -45,7 +45,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Landingpage />} />
       <Route path='/login' element={!userData ? <Login /> : <Navigate to="/home" />} />
-      <Route path='/signup' element={!userData ? <SignUp /> : <Navigate to="/home" />} />
+      <Route path='/signup' element={!userData ? <SignUp /> : <Navigate to="/profile" />} />
       <Route path='/home' element={userData ? <Home /> : <Navigate to="/login" />} />
       <Route path='/profile' element={userData ? <Profile /> : <Navigate to="/signup" />} />
     </Routes>
