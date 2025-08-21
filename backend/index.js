@@ -16,6 +16,7 @@ app.use(cors({
     credentials:true
 }))
 
+
 app.get("/", (req, res) => {
     res.send("V2text backend is running!");
 });
@@ -27,8 +28,7 @@ app.use("/api/user",userRouter)
 app.use("/api/message",messageRouter)
 
 
-
 server.listen(port,()=>{
     connectDB();
-    console.log("server started")
+    console.log(`Server started on port ${port}`)
 })

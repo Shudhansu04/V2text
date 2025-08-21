@@ -19,7 +19,7 @@ export const sendMessage=async (req,res)=>{
         })
 
         let newMessage=await Message.create({
-            sender,receiver,message,image
+            sender,receiver,message,image 
         })
 
         if(!conversation){
